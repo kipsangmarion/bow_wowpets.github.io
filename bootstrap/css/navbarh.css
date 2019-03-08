@@ -1,0 +1,19 @@
+/*Removes default settings of the browser.
+Overflow prevents list items from going outside the list*/
+ul{list-style-type: none;margin: 0;padding: 0;overflow: hidden;
+    background-color: #3c069d;border: #36059d}
+/*text-decoration removes the underlining*/
+/*one can use li{display:inline} but that is not fun.
+Done without overflow at ul*/
+/*float lets block elements slide next to each other*/
+/*to add a light border on to each,you can opt not to
+ have the border on the last child*/
+li{float: left;border-right: 1px solid white}
+li a{display:block;text-decoration: none;color: white;padding:8px;
+    text-align: center}
+/*to specify color of active bar define a dot something*/
+/*to right align active links*/
+li a.active{background-color: #800541;color:white;}
+/*to change the link color on hover*/
+li a:hover:not(.active){background-color: #0f0f0f;color:white;}
+/*to fix the bar at the top or the bottom*/
